@@ -1,6 +1,8 @@
 ######################################################################
-# Author: Scott Heggen       TODO: Change this to your names
-# Username: heggens               TODO: Change this to your usernames
+# Author: Bryar Frank
+#           Ben Maynard
+#             Vidya Mastriyana
+# Username: frankb, maynardb, mastriyanag
 #
 # Assignment: T01: Choose Your Own Adventure
 #
@@ -68,6 +70,20 @@ if dead == True:
 
 #########################################################################################################
 # TODO Add your part of the story here. Keep in mind you may NOT be coming right after the example above.
+
+print('''Ah! So I see you're still alive ''' + username + "!")
+print('''Little did you know though, you have yet another path before you!''')
+print('''Before you, you see a old, green bridge. It's length is terrifying, looking as though it goes for miles''')
+print('''each board creeks as a small, wrinkly figure appears before your''')
+print('''It looks like a troll and begins to speak to you''')
+print('''Troll: Here before you is the bridge of DEE''')
+print('''       If you wish to pass, answer these questions, three''')
+print('''''')
+answer1 = input('       What ... is your name?')
+answer2 = input('       What ... is your quest?')
+answer3 = input('       What is my favorite color?')
+
+
 
 
 
