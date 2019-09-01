@@ -70,7 +70,7 @@ if dead == True:
 
 #########################################################################################################
 # TODO Add your part of the story here. Keep in mind you may NOT be coming right after the example above.
-
+# Introduction
 print('''Ah! So I see you're still alive ''' + username + "!")
 print('''Little did you know though, you have yet another path before you!''')
 print('''Before you, you see a old, green bridge. It's length is terrifying, looking as though it goes for miles''')
@@ -79,11 +79,39 @@ print('''It looks like a troll and begins to speak to you''')
 print('''Troll: Here before you is the bridge of DEE''')
 print('''       If you wish to pass, answer these questions, three''')
 print('''''')
-answer1 = input('       What ... is your name?')
-answer2 = input('       What ... is your quest?')
-answer3 = input('       What is my favorite color?')
+# Assign user input values
+playername = input('       What ... is your name?')
+print('       What ... is your quest?')
+quest = input('     You say, "I seek: ')
+quest = quest.lower()
+color = input('       What is my favorite color?')
+color = color.lower()
 
+# Checks if player gets all questions right or all questions wrong
+if playername == username and quest == "the holy grail" and color == "green":
+    # Good Answer
+    print("As you answer the last question you leave the troll flabergasted and he goes flying off into the sky.")
+    print( "He will bother you no more and you can finnaly continue onward in your journey")
+    print("plus you pick up a bag of doritos on your way")
+elif playername != username and quest != "the holy grail" and color != "green":
+    # Bad Answer
+    print("Oh no it seems you have not meet up to the trolls standards")
+    print("You feel the wind building up beneath you and within seconds you find you self launched it to the air")
+    sleep(delay)
 
+    dead = True
+else:
+    print("You have just barley meet the trolls standards. you may pass the bridge")
+    print("he does growl at you as you pass though")
+# Scott Heggen is Iron Man :) also the TA's
+if dead == True:
+    print("As your consciousness slowly fades, a shaded figure appears.")
+    print("Before you pass, you realize that the shaded figure is Scott Heggen.")
+    print('He leans over and says, "better luck programming next time." Then he takes your wallet.')
+    print("It was sad, because you remember as he leaves that you had a coupon in there.")
+    print("You are dead.")
+
+    quit()
 
 
 
